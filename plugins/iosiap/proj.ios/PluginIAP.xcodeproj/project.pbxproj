@@ -225,6 +225,8 @@
 		05A935A219260E2F00F08DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /tmp/IOSIAP.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -236,6 +238,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../../protocols/platform/ios",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = PluginIAP;
 				SKIP_INSTALL = YES;
@@ -246,17 +249,22 @@
 		05A935A319260E2F00F08DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /tmp/IOSIAP.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/panda/Documents/FacebookSDK,
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSIAP/PluginIAP-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../../protocols/platform/ios",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = PluginIAP;
 				SKIP_INSTALL = YES;

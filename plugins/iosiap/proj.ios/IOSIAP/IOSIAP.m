@@ -98,6 +98,7 @@ NSArray * _transactionArray;
     _productArray = response.products;
     NSArray * skProducts = response.products;
     for (SKProduct * skProduct in skProducts) {
+        OUTPUT_LOG(@"Found product: ");
         OUTPUT_LOG(@"Found product: %@ %@ %0.2f",
               skProduct.productIdentifier,
               skProduct.localizedTitle,

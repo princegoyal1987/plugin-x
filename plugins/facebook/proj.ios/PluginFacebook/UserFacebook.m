@@ -67,10 +67,15 @@ NSString *_accessToken = @"";
     }
 }
 - (BOOL) isLogined{
-    return _isLogin;
+    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded)
+        return true;
+    return false;
 }
 - (NSNumber *) isLoggedIn{
-    return [NSNumber  numberWithBool:_isLogin];
+    if(!_isLogin)
+        return [NSNumber  numberWithBool:(FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded)];
+    else
+        return [NSNumber  numberWithBool:_isLogin];
 }
 - (NSString *)getUserId{
     return _userId;

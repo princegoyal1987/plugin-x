@@ -225,6 +225,8 @@
 		BA34A781195AA8C7002D0ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /tmp/PluginFacebook.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -233,15 +235,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PluginFacebook/PluginFacebook-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../protocols/platform/ios";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
 		BA34A782195AA8C7002D0ECD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /tmp/PluginFacebook.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -253,6 +259,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
