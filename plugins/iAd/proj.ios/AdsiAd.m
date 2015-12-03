@@ -23,6 +23,7 @@ THE SOFTWARE.
 ****************************************************************************/
 #import "AdsiAd.h"
 #import "AdsWrapper.h"
+#import <AdColony/AdColony.h>
 
 #define OUTPUT_LOG(...)     if (self.debug) NSLog(__VA_ARGS__);
 
@@ -35,42 +36,66 @@ THE SOFTWARE.
 
 -(void) InitIadBanner
 {
+    return;
+    NSLog(@"AdsiAd.m: InitIadBanner: beginning1");
+   
+    
     iadBanner_ = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    iadBanner_.delegate = self;
+    
     iadBanner_.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierLandscape];
+    
     iadBanner_.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-        //iadBanner_.center = CGPointMake(480/2,320-32/2);
-        iadBanner_.center = CGPointMake(480/2,32/2);
-    else
-        //iadBanner_.center = CGPointMake(1024/2,768-66/2);
-        iadBanner_.center = CGPointMake(1024/2,66/2);
+    
+    iadBanner_.delegate = self;
+    
+    [iadBanner_ retain];
+    
+    
     appWantToShow = YES;
-    iadBanner_.hidden = TRUE;
+//    iadBanner_.hidden = TRUE;
+    
     
     UIViewController* controller = [AdsWrapper getCurrentRootViewController];
+    controller.canDisplayBannerAds = NO;
     [controller.view addSubview:iadBanner_];
+    
+    NSLog(@"AdsiAd.m:  InitIadBanner: done..");
 }
 
+- (void)createAdBannerView
+{
+    
+}
 
 - (void) configDeveloperInfo: (NSMutableDictionary*) devInfo
 {
     [self InitIadBanner];
+    
+    //Init Adcolony
+    [AdColony configureWithAppID:@"appc7986bd62f9b4c4083"
+                         zoneIDs:@[@"vz0d86ada204594ca1af"]
+                        delegate:nil
+                         logging:YES];
 }
 
 -(void) checkAndShowAd
 {
-    iadBanner_.hidden = !(appWantToShow && iadBanner_.bannerLoaded);
+//    iadBanner_.hidden = NO;!(appWantToShow && iadBanner_.bannerLoaded);
+//    NSLog(@"AdsiAd.m:  checkAndShow: iadBanner.hidden=%@ bannerloaded=%@",iadBanner_.hidden?@"YES":@"NO",iadBanner_.bannerLoaded?@"YES":@"NO");
     
 }
 - (void) showAds: (NSMutableDictionary*) info position:(int) pos
 {
+    if(pos == 0) //0 = cocos2d::plugin::ProtocolAds::AdsPos::kPosCenter
+        [AdColony playVideoAdForZone:@"vz0d86ada204594ca1af" withDelegate:nil];
+    return;
     appWantToShow = YES;
     [self checkAndShowAd];
 }
 
 - (void) hideAds: (NSMutableDictionary*) info
 {
+    return;
     appWantToShow = NO;
     [self checkAndShowAd];
 }
@@ -108,6 +133,7 @@ THE SOFTWARE.
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
     [self checkAndShowAd];
+    NSLog(@" AdsiAd.m : error => %@ ", [error userInfo] );
 }
 
 @end

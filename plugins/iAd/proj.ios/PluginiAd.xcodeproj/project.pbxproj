@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A335AD0D1C1003B500B82C9B /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD0C1C1003B500B82C9B /* AdColony.framework */; settings = {ASSET_TAGS = (); }; };
+		A335AD0F1C1003D000B82C9B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD0E1C1003D000B82C9B /* AdSupport.framework */; };
+		A335AD111C1003D500B82C9B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD101C1003D500B82C9B /* AudioToolbox.framework */; };
+		A335AD131C1003DB00B82C9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD121C1003DB00B82C9B /* AVFoundation.framework */; };
+		A335AD151C1003E200B82C9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD141C1003E200B82C9B /* CoreGraphics.framework */; };
+		A335AD171C1003EB00B82C9B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD161C1003EB00B82C9B /* CoreMedia.framework */; };
+		A335AD191C1003EF00B82C9B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD181C1003EF00B82C9B /* CoreTelephony.framework */; };
+		A335AD1C1C1003F600B82C9B /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD1A1C1003F600B82C9B /* EventKit.framework */; };
+		A335AD1D1C1003F600B82C9B /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD1B1C1003F600B82C9B /* EventKitUI.framework */; };
+		A335AD1F1C1003FB00B82C9B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD1E1C1003FB00B82C9B /* MediaPlayer.framework */; };
+		A335AD211C10040100B82C9B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD201C10040100B82C9B /* MessageUI.framework */; };
+		A335AD231C10040600B82C9B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD221C10040600B82C9B /* QuartzCore.framework */; };
+		A335AD251C10040C00B82C9B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD241C10040C00B82C9B /* Social.framework */; };
+		A335AD271C10041100B82C9B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD261C10041100B82C9B /* StoreKit.framework */; };
+		A335AD281C10041600B82C9B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86650E168BE22D0073E055 /* SystemConfiguration.framework */; };
+		A335AD2A1C10041B00B82C9B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD291C10041B00B82C9B /* WebKit.framework */; };
 		C9CF4B371980BF05004C0ABA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF4B361980BF05004C0ABA /* iAd.framework */; };
 		FA09A376168AFD41008C1C7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA09A375168AFD41008C1C7B /* Foundation.framework */; };
 		FA73FC9117A11B84007E23C2 /* AdsiAd.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73FC8F17A11B84007E23C2 /* AdsiAd.m */; };
@@ -25,6 +41,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A335AD0A1C10039D00B82C9B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		A335AD0C1C1003B500B82C9B /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		A335AD0E1C1003D000B82C9B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A335AD101C1003D500B82C9B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A335AD121C1003DB00B82C9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A335AD141C1003E200B82C9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A335AD161C1003EB00B82C9B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A335AD181C1003EF00B82C9B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A335AD1A1C1003F600B82C9B /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A335AD1B1C1003F600B82C9B /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A335AD1E1C1003FB00B82C9B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A335AD201C10040100B82C9B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A335AD221C10040600B82C9B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A335AD241C10040C00B82C9B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A335AD261C10041100B82C9B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A335AD291C10041B00B82C9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C9CF4B361980BF05004C0ABA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FA09A372168AFD41008C1C7B /* libPluginiAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPluginiAd.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA09A375168AFD41008C1C7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,8 +71,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A335AD2A1C10041B00B82C9B /* WebKit.framework in Frameworks */,
+				A335AD281C10041600B82C9B /* SystemConfiguration.framework in Frameworks */,
+				A335AD271C10041100B82C9B /* StoreKit.framework in Frameworks */,
+				A335AD251C10040C00B82C9B /* Social.framework in Frameworks */,
+				A335AD231C10040600B82C9B /* QuartzCore.framework in Frameworks */,
+				A335AD211C10040100B82C9B /* MessageUI.framework in Frameworks */,
+				A335AD1F1C1003FB00B82C9B /* MediaPlayer.framework in Frameworks */,
+				A335AD1C1C1003F600B82C9B /* EventKit.framework in Frameworks */,
+				A335AD1D1C1003F600B82C9B /* EventKitUI.framework in Frameworks */,
+				A335AD191C1003EF00B82C9B /* CoreTelephony.framework in Frameworks */,
+				A335AD171C1003EB00B82C9B /* CoreMedia.framework in Frameworks */,
+				A335AD151C1003E200B82C9B /* CoreGraphics.framework in Frameworks */,
+				A335AD131C1003DB00B82C9B /* AVFoundation.framework in Frameworks */,
+				A335AD111C1003D500B82C9B /* AudioToolbox.framework in Frameworks */,
+				A335AD0F1C1003D000B82C9B /* AdSupport.framework in Frameworks */,
 				C9CF4B371980BF05004C0ABA /* iAd.framework in Frameworks */,
 				FA09A376168AFD41008C1C7B /* Foundation.framework in Frameworks */,
+				A335AD0D1C1003B500B82C9B /* AdColony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +117,22 @@
 		FA09A374168AFD41008C1C7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A335AD291C10041B00B82C9B /* WebKit.framework */,
+				A335AD261C10041100B82C9B /* StoreKit.framework */,
+				A335AD241C10040C00B82C9B /* Social.framework */,
+				A335AD221C10040600B82C9B /* QuartzCore.framework */,
+				A335AD201C10040100B82C9B /* MessageUI.framework */,
+				A335AD1E1C1003FB00B82C9B /* MediaPlayer.framework */,
+				A335AD1A1C1003F600B82C9B /* EventKit.framework */,
+				A335AD1B1C1003F600B82C9B /* EventKitUI.framework */,
+				A335AD181C1003EF00B82C9B /* CoreTelephony.framework */,
+				A335AD161C1003EB00B82C9B /* CoreMedia.framework */,
+				A335AD141C1003E200B82C9B /* CoreGraphics.framework */,
+				A335AD121C1003DB00B82C9B /* AVFoundation.framework */,
+				A335AD101C1003D500B82C9B /* AudioToolbox.framework */,
+				A335AD0E1C1003D000B82C9B /* AdSupport.framework */,
+				A335AD0C1C1003B500B82C9B /* AdColony.framework */,
+				A335AD0A1C10039D00B82C9B /* libz.1.2.5.tbd */,
 				C9CF4B361980BF05004C0ABA /* iAd.framework */,
 				FA86650E168BE22D0073E055 /* SystemConfiguration.framework */,
 				FA09A375168AFD41008C1C7B /* Foundation.framework */,
@@ -193,6 +257,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				DSTROOT = /tmp/libPluginFlurry.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PluginiAd-Prefix.pch";
@@ -203,7 +271,10 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/FlurryAds\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = PluginiAd;
 				SKIP_INSTALL = YES;
 			};
@@ -216,6 +287,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				DSTROOT = /tmp/libPluginFlurry.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PluginiAd-Prefix.pch";
@@ -226,7 +301,10 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/FlurryAds\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = PluginiAd;
 				SKIP_INSTALL = YES;
 			};
