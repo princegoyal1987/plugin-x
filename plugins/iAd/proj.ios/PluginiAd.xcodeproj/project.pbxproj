@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A335AD0D1C1003B500B82C9B /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD0C1C1003B500B82C9B /* AdColony.framework */; settings = {ASSET_TAGS = (); }; };
 		A335AD0F1C1003D000B82C9B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD0E1C1003D000B82C9B /* AdSupport.framework */; };
 		A335AD111C1003D500B82C9B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD101C1003D500B82C9B /* AudioToolbox.framework */; };
 		A335AD131C1003DB00B82C9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A335AD121C1003DB00B82C9B /* AVFoundation.framework */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		A335AD0A1C10039D00B82C9B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
-		A335AD0C1C1003B500B82C9B /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		A335AD0E1C1003D000B82C9B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A335AD101C1003D500B82C9B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A335AD121C1003DB00B82C9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -88,7 +86,6 @@
 				A335AD0F1C1003D000B82C9B /* AdSupport.framework in Frameworks */,
 				C9CF4B371980BF05004C0ABA /* iAd.framework in Frameworks */,
 				FA09A376168AFD41008C1C7B /* Foundation.framework in Frameworks */,
-				A335AD0D1C1003B500B82C9B /* AdColony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +128,6 @@
 				A335AD121C1003DB00B82C9B /* AVFoundation.framework */,
 				A335AD101C1003D500B82C9B /* AudioToolbox.framework */,
 				A335AD0E1C1003D000B82C9B /* AdSupport.framework */,
-				A335AD0C1C1003B500B82C9B /* AdColony.framework */,
 				A335AD0A1C10039D00B82C9B /* libz.1.2.5.tbd */,
 				C9CF4B361980BF05004C0ABA /* iAd.framework */,
 				FA86650E168BE22D0073E055 /* SystemConfiguration.framework */,

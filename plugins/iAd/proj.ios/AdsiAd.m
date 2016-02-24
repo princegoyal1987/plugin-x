@@ -23,7 +23,6 @@ THE SOFTWARE.
 ****************************************************************************/
 #import "AdsiAd.h"
 #import "AdsWrapper.h"
-#import <AdColony/AdColony.h>
 
 #define OUTPUT_LOG(...)     if (self.debug) NSLog(__VA_ARGS__);
 
@@ -36,7 +35,6 @@ THE SOFTWARE.
 
 -(void) InitIadBanner
 {
-    return;
     NSLog(@"AdsiAd.m: InitIadBanner: beginning1");
    
     
@@ -56,7 +54,7 @@ THE SOFTWARE.
     
     
     UIViewController* controller = [AdsWrapper getCurrentRootViewController];
-    controller.canDisplayBannerAds = NO;
+    controller.canDisplayBannerAds = YES;
     [controller.view addSubview:iadBanner_];
     
     NSLog(@"AdsiAd.m:  InitIadBanner: done..");
@@ -70,25 +68,16 @@ THE SOFTWARE.
 - (void) configDeveloperInfo: (NSMutableDictionary*) devInfo
 {
     [self InitIadBanner];
-    
-    //Init Adcolony
-    [AdColony configureWithAppID:@"appc7986bd62f9b4c4083"
-                         zoneIDs:@[@"vz0d86ada204594ca1af"]
-                        delegate:nil
-                         logging:YES];
 }
 
 -(void) checkAndShowAd
 {
-//    iadBanner_.hidden = NO;!(appWantToShow && iadBanner_.bannerLoaded);
+    iadBanner_.hidden = YES;!(appWantToShow && iadBanner_.bannerLoaded);
 //    NSLog(@"AdsiAd.m:  checkAndShow: iadBanner.hidden=%@ bannerloaded=%@",iadBanner_.hidden?@"YES":@"NO",iadBanner_.bannerLoaded?@"YES":@"NO");
     
 }
 - (void) showAds: (NSMutableDictionary*) info position:(int) pos
 {
-    if(pos == 0) //0 = cocos2d::plugin::ProtocolAds::AdsPos::kPosCenter
-        [AdColony playVideoAdForZone:@"vz0d86ada204594ca1af" withDelegate:nil];
-    return;
     appWantToShow = YES;
     [self checkAndShowAd];
 }
