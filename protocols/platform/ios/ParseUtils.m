@@ -38,6 +38,7 @@
     }
     
 }
+
 + (NSString *) NSDictionaryToNSString:(id)dic{
     NSString *result = nil;
     NSError *error;

@@ -35,23 +35,35 @@ THE SOFTWARE.
 
 -(void) InitIadBanner
 {
+    NSLog(@"AdsiAd.m: InitIadBanner: beginning1");
+   
+    
     iadBanner_ = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    iadBanner_.delegate = self;
+    
     iadBanner_.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierLandscape];
+    
     iadBanner_.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-        //iadBanner_.center = CGPointMake(480/2,320-32/2);
-        iadBanner_.center = CGPointMake(480/2,32/2);
-    else
-        //iadBanner_.center = CGPointMake(1024/2,768-66/2);
-        iadBanner_.center = CGPointMake(1024/2,66/2);
+    
+    iadBanner_.delegate = self;
+    
+    [iadBanner_ retain];
+    
+    
     appWantToShow = YES;
-    iadBanner_.hidden = TRUE;
+//    iadBanner_.hidden = TRUE;
+    
     
     UIViewController* controller = [AdsWrapper getCurrentRootViewController];
+    controller.canDisplayBannerAds = YES;
     [controller.view addSubview:iadBanner_];
+    
+    NSLog(@"AdsiAd.m:  InitIadBanner: done..");
 }
 
+- (void)createAdBannerView
+{
+    
+}
 
 - (void) configDeveloperInfo: (NSMutableDictionary*) devInfo
 {
@@ -60,7 +72,8 @@ THE SOFTWARE.
 
 -(void) checkAndShowAd
 {
-    iadBanner_.hidden = !(appWantToShow && iadBanner_.bannerLoaded);
+    iadBanner_.hidden = YES;!(appWantToShow && iadBanner_.bannerLoaded);
+//    NSLog(@"AdsiAd.m:  checkAndShow: iadBanner.hidden=%@ bannerloaded=%@",iadBanner_.hidden?@"YES":@"NO",iadBanner_.bannerLoaded?@"YES":@"NO");
     
 }
 - (void) showAds: (NSMutableDictionary*) info position:(int) pos
@@ -71,6 +84,7 @@ THE SOFTWARE.
 
 - (void) hideAds: (NSMutableDictionary*) info
 {
+    return;
     appWantToShow = NO;
     [self checkAndShowAd];
 }
@@ -108,6 +122,7 @@ THE SOFTWARE.
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
     [self checkAndShowAd];
+    NSLog(@" AdsiAd.m : error => %@ ", [error userInfo] );
 }
 
 @end
